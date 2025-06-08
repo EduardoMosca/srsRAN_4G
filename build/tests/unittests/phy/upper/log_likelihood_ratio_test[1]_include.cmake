@@ -1,0 +1,5 @@
+if(EXISTS "/home/eduardo/Desktop/Faculdade/projeto_mestrado/srsRAN_Project/build/tests/unittests/phy/upper/log_likelihood_ratio_test[1]_tests.cmake")
+  include("/home/eduardo/Desktop/Faculdade/projeto_mestrado/srsRAN_Project/build/tests/unittests/phy/upper/log_likelihood_ratio_test[1]_tests.cmake")
+else()
+  add_test(log_likelihood_ratio_test_NOT_BUILT log_likelihood_ratio_test_NOT_BUILT)
+endif()

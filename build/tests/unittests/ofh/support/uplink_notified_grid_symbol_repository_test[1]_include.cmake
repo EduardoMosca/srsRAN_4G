@@ -1,0 +1,5 @@
+if(EXISTS "/home/eduardo/Desktop/Faculdade/projeto_mestrado/srsRAN_Project/build/tests/unittests/ofh/support/uplink_notified_grid_symbol_repository_test[1]_tests.cmake")
+  include("/home/eduardo/Desktop/Faculdade/projeto_mestrado/srsRAN_Project/build/tests/unittests/ofh/support/uplink_notified_grid_symbol_repository_test[1]_tests.cmake")
+else()
+  add_test(uplink_notified_grid_symbol_repository_test_NOT_BUILT uplink_notified_grid_symbol_repository_test_NOT_BUILT)
+endif()

@@ -830,7 +830,8 @@ static prach_configuration prach_configuration_get_fr2_unpaired(uint8_t prach_co
 
   return table[prach_config_index];
 }
-
+// Fazer com FR1, FDD, PRACH Index (6)
+// MOD 10
 prach_configuration srsran::prach_configuration_get(frequency_range fr, duplex_mode dm, uint8_t prach_config_index)
 {
   if ((fr == frequency_range::FR1) && (dm == duplex_mode::FDD || dm == duplex_mode::SUL)) {

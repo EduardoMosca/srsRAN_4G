@@ -246,11 +246,15 @@ void ra_scheduler::handle_rach_indication(const rach_indication_message& msg)
 void ra_scheduler::handle_rach_indication_impl(const rach_indication_message& msg, slot_point sl_tx)
 {
   static const unsigned prach_duration = 1; // TODO: Take from config
-
+  logger.info("log pessoal do slot_index={}", msg.slot_rx.slot_index());
   for (const auto& prach_occ : msg.occasions) {
     // As per Section 5.1.3, TS 38.321, and from Section 5.3.2, TS 38.211, slot_idx uses as the numerology of reference
     // 15kHz for long PRACH Formats (i.e, slot_idx = subframe index); whereas, for short PRACH formats, it uses the same
     // numerology as the SCS common (i.e, slot_idx = actual slot index within the frame).
+    if (msg.slot_rx.slot_index() == 1) {
+      for (auto& preamble : prach_occ.preambles) {
+      }
+    }
     const unsigned slot_idx = prach_format_is_long ? msg.slot_rx.subframe_index() : msg.slot_rx.slot_index();
     const uint16_t ra_rnti  = get_ra_rnti(slot_idx, prach_occ.start_symbol, prach_occ.frequency_index);
 

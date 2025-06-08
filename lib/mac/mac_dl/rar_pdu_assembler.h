@@ -23,6 +23,7 @@
 #pragma once
 
 #include "srsran/mac/cell_configuration.h"
+#include "srsran/srslog/srslog.h"
 #include "srsran/support/memory_pool/ring_buffer_pool.h"
 
 namespace srsran {

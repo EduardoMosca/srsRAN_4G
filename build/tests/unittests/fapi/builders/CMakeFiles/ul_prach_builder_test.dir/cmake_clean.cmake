@@ -1,0 +1,13 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/ul_prach_builder_test.dir/link.d"
+  "CMakeFiles/ul_prach_builder_test.dir/ul_prach_pdu_test.cpp.o"
+  "CMakeFiles/ul_prach_builder_test.dir/ul_prach_pdu_test.cpp.o.d"
+  "ul_prach_builder_test"
+  "ul_prach_builder_test.pdb"
+  "ul_prach_builder_test[1]_tests.cmake"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/ul_prach_builder_test.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

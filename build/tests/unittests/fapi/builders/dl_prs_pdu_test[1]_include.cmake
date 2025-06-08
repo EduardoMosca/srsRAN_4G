@@ -1,0 +1,5 @@
+if(EXISTS "/home/eduardo/Desktop/Faculdade/projeto_mestrado/srsRAN_Project/build/tests/unittests/fapi/builders/dl_prs_pdu_test[1]_tests.cmake")
+  include("/home/eduardo/Desktop/Faculdade/projeto_mestrado/srsRAN_Project/build/tests/unittests/fapi/builders/dl_prs_pdu_test[1]_tests.cmake")
+else()
+  add_test(dl_prs_pdu_test_NOT_BUILT dl_prs_pdu_test_NOT_BUILT)
+endif()

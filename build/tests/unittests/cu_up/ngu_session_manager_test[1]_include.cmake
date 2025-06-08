@@ -1,0 +1,5 @@
+if(EXISTS "/home/eduardo/Desktop/Faculdade/projeto_mestrado/srsRAN_Project/build/tests/unittests/cu_up/ngu_session_manager_test[1]_tests.cmake")
+  include("/home/eduardo/Desktop/Faculdade/projeto_mestrado/srsRAN_Project/build/tests/unittests/cu_up/ngu_session_manager_test[1]_tests.cmake")
+else()
+  add_test(ngu_session_manager_test_NOT_BUILT ngu_session_manager_test_NOT_BUILT)
+endif()

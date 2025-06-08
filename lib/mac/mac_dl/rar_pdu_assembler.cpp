@@ -31,7 +31,10 @@ namespace {
 class rar_pdu_encoder
 {
 public:
-  explicit rar_pdu_encoder(const rar_information& rar_info_) : rar_info(rar_info_) {}
+  explicit rar_pdu_encoder(const rar_information& rar_info_) :
+    rar_info(rar_info_), logger(srslog::fetch_basic_logger("TESTE_LRC"))
+  {
+  }
 
   void encode(span<uint8_t> output_buf);
 
@@ -47,6 +50,7 @@ private:
 
   const rar_information& rar_info;
   uint8_t*               ptr = nullptr;
+  srslog::basic_logger&  logger;
 };
 
 } // namespace
@@ -54,7 +58,7 @@ private:
 void rar_pdu_encoder::encode(span<uint8_t> output_buf)
 {
   // See TS38.321, Section 6.2.3.
-  static constexpr unsigned MAC_RAR_SUBHEADER_AND_PAYLOAD_LENGTH = 8;
+  static constexpr unsigned MAC_RAR_SUBHEADER_AND_PAYLOAD_LENGTH = 9;
   srsran_assert(output_buf.size() >= MAC_RAR_SUBHEADER_AND_PAYLOAD_LENGTH * rar_info.grants.size(),
                 "Output buffer is too small to fit encoded RAR");
   ptr = output_buf.data();
@@ -82,7 +86,11 @@ void rar_pdu_encoder::encode_rapid_subheader(uint16_t rapid, bool is_last_subpdu
   static const unsigned RAPID_FLAG = 1;
 
   // write E/T/RAPID MAC subheader.
-  *ptr = (uint8_t)((not is_last_subpdu ? 1U : 0U) << 7U) | (RAPID_FLAG << 6U) | ((uint8_t)rapid & 0x3fU);
+  *ptr =
+      (uint8_t)((not is_last_subpdu ? 1U : 0U) << 7U) | (RAPID_FLAG << 6U) | (((uint8_t)rapid & 0x3FFFU >> 2) & 0x3FU);
+  ptr++;
+  *ptr = ((uint8_t)rapid & 0x3FFFU & 0xFFU);
+  logger.info("Identificador do preambulo: {}", *(ptr - 1));
   ptr++;
 }
 

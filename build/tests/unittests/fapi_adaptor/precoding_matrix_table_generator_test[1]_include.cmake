@@ -1,0 +1,5 @@
+if(EXISTS "/home/eduardo/Desktop/Faculdade/projeto_mestrado/srsRAN_Project/build/tests/unittests/fapi_adaptor/precoding_matrix_table_generator_test[1]_tests.cmake")
+  include("/home/eduardo/Desktop/Faculdade/projeto_mestrado/srsRAN_Project/build/tests/unittests/fapi_adaptor/precoding_matrix_table_generator_test[1]_tests.cmake")
+else()
+  add_test(precoding_matrix_table_generator_test_NOT_BUILT precoding_matrix_table_generator_test_NOT_BUILT)
+endif()
