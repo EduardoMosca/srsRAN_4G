@@ -1,5 +1,0 @@
-if(EXISTS "/home/eduardo/Desktop/Faculdade/projeto_mestrado/srsRAN_Project/build/tests/unittests/adt/bounded_integer_test[1]_tests.cmake")
-  include("/home/eduardo/Desktop/Faculdade/projeto_mestrado/srsRAN_Project/build/tests/unittests/adt/bounded_integer_test[1]_tests.cmake")
-else()
-  add_test(bounded_integer_test_NOT_BUILT bounded_integer_test_NOT_BUILT)
-endif()

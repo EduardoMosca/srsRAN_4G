@@ -1,5 +1,0 @@
-if(EXISTS "/home/eduardo/Desktop/Faculdade/projeto_mestrado/srsRAN_Project/build/tests/unittests/fapi/builders/slot_indication_builder_test[1]_tests.cmake")
-  include("/home/eduardo/Desktop/Faculdade/projeto_mestrado/srsRAN_Project/build/tests/unittests/fapi/builders/slot_indication_builder_test[1]_tests.cmake")
-else()
-  add_test(slot_indication_builder_test_NOT_BUILT slot_indication_builder_test_NOT_BUILT)
-endif()

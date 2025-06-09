@@ -1,5 +1,0 @@
-if(EXISTS "/home/eduardo/Desktop/Faculdade/projeto_mestrado/srsRAN_Project/build/tests/unittests/support/async_event_observer_test[1]_tests.cmake")
-  include("/home/eduardo/Desktop/Faculdade/projeto_mestrado/srsRAN_Project/build/tests/unittests/support/async_event_observer_test[1]_tests.cmake")
-else()
-  add_test(async_event_observer_test_NOT_BUILT async_event_observer_test_NOT_BUILT)
-endif()

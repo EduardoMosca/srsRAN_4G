@@ -1,4 +1,0 @@
-# Directory labels
- phy
-# Source files and their labels
-/home/eduardo/Desktop/Faculdade/projeto_mestrado/srsRAN_Project/tests/unittests/phy/support/re_pattern_test.cpp

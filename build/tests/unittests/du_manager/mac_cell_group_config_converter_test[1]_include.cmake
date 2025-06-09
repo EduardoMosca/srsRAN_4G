@@ -1,5 +1,0 @@
-if(EXISTS "/home/eduardo/Desktop/Faculdade/projeto_mestrado/srsRAN_Project/build/tests/unittests/du_manager/mac_cell_group_config_converter_test[1]_tests.cmake")
-  include("/home/eduardo/Desktop/Faculdade/projeto_mestrado/srsRAN_Project/build/tests/unittests/du_manager/mac_cell_group_config_converter_test[1]_tests.cmake")
-else()
-  add_test(mac_cell_group_config_converter_test_NOT_BUILT mac_cell_group_config_converter_test_NOT_BUILT)
-endif()

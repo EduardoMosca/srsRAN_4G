@@ -1,5 +1,0 @@
-if(EXISTS "/home/eduardo/Desktop/Faculdade/projeto_mestrado/srsRAN_Project/build/tests/unittests/f1u/du/f1u_du_bearer_test[1]_tests.cmake")
-  include("/home/eduardo/Desktop/Faculdade/projeto_mestrado/srsRAN_Project/build/tests/unittests/f1u/du/f1u_du_bearer_test[1]_tests.cmake")
-else()
-  add_test(f1u_du_bearer_test_NOT_BUILT f1u_du_bearer_test_NOT_BUILT)
-endif()

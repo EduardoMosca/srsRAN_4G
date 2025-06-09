@@ -1,5 +1,0 @@
-if(EXISTS "/home/eduardo/Desktop/Faculdade/projeto_mestrado/srsRAN_Project/build/tests/unittests/du_manager/serving_cell_config_converter_test[1]_tests.cmake")
-  include("/home/eduardo/Desktop/Faculdade/projeto_mestrado/srsRAN_Project/build/tests/unittests/du_manager/serving_cell_config_converter_test[1]_tests.cmake")
-else()
-  add_test(serving_cell_config_converter_test_NOT_BUILT serving_cell_config_converter_test_NOT_BUILT)
-endif()

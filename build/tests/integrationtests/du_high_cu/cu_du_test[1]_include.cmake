@@ -1,5 +1,0 @@
-if(EXISTS "/home/eduardo/Desktop/Faculdade/projeto_mestrado/srsRAN_Project/build/tests/integrationtests/du_high_cu/cu_du_test[1]_tests.cmake")
-  include("/home/eduardo/Desktop/Faculdade/projeto_mestrado/srsRAN_Project/build/tests/integrationtests/du_high_cu/cu_du_test[1]_tests.cmake")
-else()
-  add_test(cu_du_test_NOT_BUILT cu_du_test_NOT_BUILT)
-endif()

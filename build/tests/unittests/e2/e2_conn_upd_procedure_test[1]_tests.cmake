@@ -1,3 +1,0 @@
-add_test([=[e2_agent_test_with_pcap/e2_agent_test_with_pcap.e2_connection_update_failure/NULL]=]  /home/eduardo/Desktop/Faculdade/projeto_mestrado/srsRAN_Project/build/tests/unittests/e2/e2_conn_upd_procedure_test [==[--gtest_filter=e2_agent_test_with_pcap/e2_agent_test_with_pcap.e2_connection_update_failure/0]==] --gtest_also_run_disabled_tests)
-set_tests_properties([=[e2_agent_test_with_pcap/e2_agent_test_with_pcap.e2_connection_update_failure/NULL]=]  PROPERTIES WORKING_DIRECTORY /home/eduardo/Desktop/Faculdade/projeto_mestrado/srsRAN_Project/build/tests/unittests/e2 SKIP_REGULAR_EXPRESSION [==[\[  SKIPPED \]]==])
-set(  e2_conn_upd_procedure_test_TESTS e2_agent_test_with_pcap/e2_agent_test_with_pcap.e2_connection_update_failure/NULL)
